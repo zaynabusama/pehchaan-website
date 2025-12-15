@@ -1,0 +1,271 @@
+/* BASIC RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  background-color: #f4e7dd; /* light beige */
+  color: #2b1b12;
+  line-height: 1.6;
+}
+
+/* GENERAL LAYOUT */
+.container {
+  width: min(1100px, 100% - 2.5rem);
+  margin-inline: auto;
+}
+
+.section {
+  padding: 4rem 0;
+  background-color: #f4e7dd;
+}
+
+.section-alt {
+  padding: 4rem 0;
+  background-color: #8b5735; /* warm brown */
+  color: #fcefe3;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.section-intro {
+  max-width: 650px;
+  margin: 0.5rem auto 2rem;
+  text-align: center;
+}
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: #3a2415;
+  color: #fcefe3;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+.brand-name {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.nav-links a {
+  color: #fcefe3;
+  text-decoration: none;
+  margin-left: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 70vh;
+  min-height: 380px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.75)
+  );
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.hero-text {
+  max-width: 550px;
+}
+
+.hero-tagline {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+
+.hero-mission {
+  font-size: 0.95rem;
+}
+
+/* SPLIT LAYOUT */
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.split.reverse {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+}
+
+.text-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+}
+
+.text-block p + p {
+  margin-top: 0.7rem;
+}
+
+.image-block img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* VALUES GRID */
+.values-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.value-card {
+  background-color: rgba(244, 231, 221, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid rgba(252, 239, 227, 0.25);
+}
+
+.value-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* USERS GRID */
+.user-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.8rem;
+}
+
+.user-card {
+  background-color: #fff7ef;
+  border-radius: 14px;
+  padding: 1.4rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2cbb5;
+}
+
+.user-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.user-need {
+  font-size: 0.9rem;
+  color: #6a4a32;
+  margin-bottom: 0.75rem;
+}
+
+.user-image img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 0.75rem;
+}
+
+.user-features {
+  font-size: 0.9rem;
+  padding-left: 1.1rem;
+}
+
+.user-features li + li {
+  margin-top: 0.25rem;
+}
+
+/* CONTACT */
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact a {
+  color: #ffe3c7;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: #3a2415;
+  color: #fcefe3;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    margin-right: 0.9rem;
+  }
+
+  .split,
+  .split.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    align-items: center;
+    padding-bottom: 2.2rem;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
