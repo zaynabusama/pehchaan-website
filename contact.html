@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Pehchaan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-content">
+    <a class="brand" href="index.html"><span class="brand-name">Pehchaan</span></a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="contact.html">Contact</a>
+      <a class="cart-badge" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container contact-wrap">
+    <div class="page-hero" style="padding:0;">
+      <div class="kicker" style="color: rgba(32,22,18,.55);">Contact us</div>
+      <h1 class="h2" style="margin-top:10px;">Let’s Connect</h1>
+      <p class="p">For inquiries, custom adaptations, or project collaborations.</p>
+    </div>
+
+    <div class="form-card">
+      <form onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+        <div class="form-grid">
+          <input class="input" required placeholder="Name" />
+          <input class="input" required type="email" placeholder="E-mail" />
+          <textarea class="textarea" required placeholder="Message"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn dark" type="submit">Send Message</button>
+          <span class="p" style="margin:0;">We usually reply within 24–48 hours.</span>
+        </div>
+      </form>
+
+      <div class="contact-mini">
+        <div><strong>Email Address:</strong> <a href="mailto:support@pehchaan.com">support@pehchaan.com</a></div>
+        <div><strong>Phone Number:</strong> (123) 456-7890</div>
+        <div><strong>Instagram:</strong> <a href="#">@pehchaanstudio</a></div>
+      </div>
+    </div>
+
+    <!-- IMAGE SECTION (after form-card, before footer) -->
+    <div class="photo-frame" style="margin-top: 22px;">
+      <img src="images/contact.png" alt="Pehchaan contact image">
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-title">Pehchaan</div>
+      <div class="footer-muted">Adaptive Clothing Brand</div>
+    </div>
+    <div class="footer-contact">
+      <div><strong>Email:</strong> <a href="mailto:support@pehchaan.com">support@pehchaan.com</a></div>
+      <div><strong>Phone:</strong> (123) 456-7890</div>
+      <div><strong>Instagram:</strong> <a href="#">@pehchaanstudio</a></div>
+    </div>
+    <div class="footer-muted">© 2025 Pehchaan</div>
+  </div>
+</footer>
+
+</body>
+</html>

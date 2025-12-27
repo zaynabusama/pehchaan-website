@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pehchaan – Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <span class="brand-name">Pehchaan</span>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a class="cart-badge" href="cart.html">Cart <span>(<span data-cart-count>0</span>)</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="h1">Your Cart</h1>
+      <p class="p">Review your items and update quantities.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 1.6rem;">
+    <div class="container cart-layout">
+      <div class="card">
+        <div id="cart-items"></div>
+        <p id="cart-empty" style="display:none; color: var(--muted);">Your cart is empty.</p>
+      </div>
+
+      <aside class="card summary">
+        <h3 style="font-size: 1.05rem;">Order Summary</h3>
+        <div class="row"><span>Subtotal</span><span id="cart-subtotal">PKR 0</span></div>
+        <div class="row"><span>Shipping</span><span>PKR 0</span></div>
+        <div class="total"><span>Total</span><span id="cart-total">PKR 0</span></div>
+        <button class="btn primary" style="width:100%; margin-top: 1.2rem;">Checkout</button>
+        
+      </aside>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-title">Pehchaan</div>
+      <div class="footer-muted">Adaptive Clothing Brand</div>
+    </div>
+
+    <div class="footer-contact">
+      <div><strong>Email:</strong> <a href="mailto:support@pehchaan.com">support@pehchaan.com</a></div>
+      <div><strong>Phone:</strong> (123) 456-7890</div>
+      <div><strong>Instagram:</strong> <a href="#">@pehchaanstudio</a></div>
+    </div>
+
+    <div class="footer-muted">© 2025 Pehchaan</div>
+  </div>
+</footer>
+
+</body>
+</html>

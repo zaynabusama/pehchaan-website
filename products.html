@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Pehchaan – Adaptive Clothing</title>
+  <title>Products – Pehchaan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
@@ -11,105 +11,116 @@
 
 <header class="site-header">
   <div class="container header-content">
-    <a class="brand" href="index.html"><span class="brand-name">PEHCHAAN</span></a>
-
+    <a class="brand" href="index.html"><span class="brand-name">Pehchaan</span></a>
     <nav class="nav-links">
-      <a class="active" href="index.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
-      <a href="products.html">Products</a>
+      <a class="active" href="products.html">Products</a>
       <a href="contact.html">Contact</a>
       <a class="cart-badge" href="cart.html">Cart (<span data-cart-count>0</span>)</a>
     </nav>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <img src="images/hero.png" alt="Models wearing adaptive clothing" class="hero-bg" />
-  <div class="hero-gradient"></div>
-
-  <div class="container hero-content">
-    <div class="hero-inner">
-      <div class="kicker">Wear your Pehchaan</div>
-      <h1 class="h1">Adaptive Clothing for Real People</h1>
-      <p class="hero-mission">
-        Our mission is to provide accessible, stylish, and comfortable clothing that supports the real needs of disabled users.
-
-      </p>
-
-      <div class="hero-actions">
-        <a class="btn primary" href="products.html">Explore Products</a>
-        <a class="btn ghost" href="about.html">Learn More</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PRODUCTS (Home preview only) -->
 <section class="section">
   <div class="container">
     <div class="section-head">
       <div>
-        <h2 class="h2">Products</h2>
-        <p class="p">Designed for comfort, independence, and everyday wear.</p>
+        <h2 class="h2">Our Products</h2>
+        <p class="p">Clothing designed to support real needs with dignity and ease.</p>
       </div>
-      <a class="btn outline" href="products.html">View All</a>
     </div>
 
     <div class="products-grid">
 
+      <!-- Product 1 -->
       <article class="product-card">
         <a class="product-media" href="product.html?id=jacket-1">
           <img src="images/product-1.png" alt="Adaptive Jacket">
         </a>
         <div class="product-body">
           <div class="product-title">Adaptive Jacket</div>
-          <div class="product-desc">Easy closures + relaxed fit for daily comfort.</div>
+          <div class="product-desc">Comfortable layers with accessible closures.</div>
           <div class="product-row">
             <span class="price">PKR 6,500</span>
-            <a class="add-btn" href="product.html?id=jacket-1">View</a>
+            <div style="display:flex; gap:10px;">
+              <a class="add-btn" href="product.html?id=jacket-1">View</a>
+              <button class="add-btn"
+                data-add-to-cart
+                data-id="jacket-1"
+                data-name="Adaptive Jacket"
+                data-price="6500"
+                data-image="images/product-1.png">Add</button>
+            </div>
           </div>
         </div>
       </article>
 
+      <!-- Product 2 -->
       <article class="product-card">
         <a class="product-media" href="product.html?id=pants-1">
           <img src="images/product-2.png" alt="Seated Comfort Pants">
         </a>
         <div class="product-body">
           <div class="product-title">Seated Comfort Pants</div>
-          <div class="product-desc">Higher back rise + side access for easier dressing.</div>
+          <div class="product-desc">Designed for wheelchair users with pressure-free seams.</div>
           <div class="product-row">
             <span class="price">PKR 5,200</span>
-            <a class="add-btn" href="product.html?id=pants-1">View</a>
+            <div style="display:flex; gap:10px;">
+              <a class="add-btn" href="product.html?id=pants-1">View</a>
+              <button class="add-btn"
+                data-add-to-cart
+                data-id="pants-1"
+                data-name="Seated Comfort Pants"
+                data-price="5200"
+                data-image="images/product-2.png">Add</button>
+            </div>
           </div>
         </div>
       </article>
 
+      <!-- Product 3 -->
       <article class="product-card">
         <a class="product-media" href="product.html?id=kurta-1">
           <img src="images/product-3.png" alt="Easy-Open Kurta">
         </a>
         <div class="product-body">
           <div class="product-title">Easy-Open Kurta</div>
-          <div class="product-desc">Low-effort dressing with breathable fabric.</div>
+          <div class="product-desc">Adaptive openings with breathable fabric.</div>
           <div class="product-row">
             <span class="price">PKR 4,800</span>
-            <a class="add-btn" href="product.html?id=kurta-1">View</a>
+            <div style="display:flex; gap:10px;">
+              <a class="add-btn" href="product.html?id=kurta-1">View</a>
+              <button class="add-btn"
+                data-add-to-cart
+                data-id="kurta-1"
+                data-name="Easy-Open Kurta"
+                data-price="4800"
+                data-image="images/product-3.png">Add</button>
+            </div>
           </div>
         </div>
       </article>
 
+      <!-- Product 4 -->
       <article class="product-card">
         <a class="product-media" href="product.html?id=shirt-1">
           <img src="images/product-4.png" alt="Magnetic Closure Shirt">
         </a>
         <div class="product-body">
           <div class="product-title">Magnetic Closure Shirt</div>
-          <div class="product-desc">Hidden magnets for quick, low-effort dressing.</div>
+          <div class="product-desc">Hidden magnetic snaps for independent dressing.</div>
           <div class="product-row">
             <span class="price">PKR 4,300</span>
-            <a class="add-btn" href="product.html?id=shirt-1">View</a>
+            <div style="display:flex; gap:10px;">
+              <a class="add-btn" href="product.html?id=shirt-1">View</a>
+              <button class="add-btn"
+                data-add-to-cart
+                data-id="shirt-1"
+                data-name="Magnetic Closure Shirt"
+                data-price="4300"
+                data-image="images/product-4.png">Add</button>
+            </div>
           </div>
         </div>
       </article>
@@ -117,7 +128,6 @@
     </div>
   </div>
 </section>
-
 
 <footer class="site-footer">
   <div class="container footer-inner">
@@ -125,13 +135,11 @@
       <div class="footer-title">Pehchaan</div>
       <div class="footer-muted">Adaptive Clothing Brand</div>
     </div>
-
     <div class="footer-contact">
       <div><strong>Email:</strong> <a href="mailto:support@pehchaan.com">support@pehchaan.com</a></div>
       <div><strong>Phone:</strong> (123) 456-7890</div>
       <div><strong>Instagram:</strong> <a href="#">@pehchaanstudio</a></div>
     </div>
-
     <div class="footer-muted">© 2025 Pehchaan</div>
   </div>
 </footer>
